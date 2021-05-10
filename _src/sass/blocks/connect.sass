@@ -1,0 +1,135 @@
+.connect
+  background-color: $blue-three
+  padding-top: 80px
+
+  +mw($tb)
+    padding-top: 70px
+
+  +mw($ph)
+    padding-top: 60px
+
+  &__inner
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+    padding-bottom: 182px
+
+    +mw($tb)
+      padding-bottom: 135px
+      flex-direction: column
+      align-items: center
+
+    +mw($ph)
+      padding-bottom: 131px
+
+  &__col-left
+    flex-grow: 1
+    max-width: 417px
+
+    +mw($tb)
+      margin-bottom: 70px
+      text-align: center
+
+    +mw($ph)
+      margin-bottom: 40px
+
+  &__title
+    width: 100%
+    margin-bottom: 28px
+
+    +mw($tb)
+      margin-bottom: 40px
+
+    +mw($ph)
+      margin-bottom: 20px
+
+  &__text
+    font-size: 24px
+    letter-spacing: 0.713846px
+
+    +mw($ph)
+      font-size: 18px
+
+  &__link
+    color: rgba($blue-border, 0.3)
+    font-size: 24px
+    letter-spacing: 0.713846px
+    margin-top: 18px
+    margin-bottom: 10px
+    display: block
+
+  &__col-right
+    max-width: 440px
+    width: 100%
+
+  &__form
+
+.title
+
+.form-big
+
+  &__field
+
+  &__box
+
+    & + div
+      margin-top: 20px
+
+  &__label
+    +vh()
+
+  &__input
+    width: 100%
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: 0.443077px
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 8px
+    padding-bottom: 7px
+    background-color: $white
+    border: 1px solid rgba($blue-border, 0.4)
+    border-radius: 40px
+
+    &::placeholder
+      font-size: 18px
+      line-height: 28px
+      letter-spacing: 0.443077px
+      color: rgba($blue-four, 0.6)
+
+  &__textarea
+    width: 100%
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: 0.443077px
+    resize: none
+    padding-left: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-right: 20px
+    border: 1px solid rgba($blue-border, 0.4)
+    border-radius: 20px
+    min-height: 68px
+
+    &::placeholder
+      font-size: 18px
+      line-height: 28px
+      letter-spacing: 0.443077px
+      color: rgba($blue-four, 0.6)
+
+  &__btn
+    margin-top: 20px
+    padding-left: 28px
+    padding-right: 28px
+    cursor: pointer
+
+.valid
+
+.val-elem
+
+.val-elem--email
+
+.btn
+
+.btn--blue

@@ -16,7 +16,7 @@ block content
             .advantages__box
               h3.advantages-slide__title.title= img_name[n-1][3]
               p.advantages-slide__text= img_name[n-1][4]
-              form.advantages__form.form-simple.form-simple--advantages.valid(action="#" method="post" name=(`form-simple-${n}`) id=(`form-simple-${n}`) automatecomplete="off")
+              form.advantages__form.form-simple.form-simple--advantages.valid(action="#" method="post" name=(`form-simple-${n}`) id=(`form-simple-${n}`))
                 p.form-simple__banner Проверьте e-mail!
                 fieldset.form-simple__field
                   .form-simple__box
@@ -62,7 +62,7 @@ block content
 
       .automate__col-right
         p.automate__text Подключайте привычные приложения, которые вы используете в работе.
-        form.automate__form.form-simple.valid#automate-form(action="#" method="post" name="automate"  automatecomplete="off")
+        form.automate__form.form-simple.valid#automate-form(action="#" method="post" name="automate" )
           p.form-simple__banner Проверьте e-mail!
           fieldset.form-simple__field
             .form-simple__box
@@ -110,17 +110,17 @@ block content
       ul.whom__list
         li.whom__item
           figure.whom__img-wrap.whom__img-wrap--pot
-          p.whom__box
+          .whom__box
             h3.whom__sub-title Малый бизнес
             p.whom__text Скорость получения информации о&nbsp;платежах и&nbsp;минимизация издержек
         li.whom__item
           figure.whom__img-wrap.whom__img-wrap--horse
-          p.whom__box
+          .whom__box
             h3.whom__sub-title Стартапы
             p.whom__text Автоматизация бизнес-процессов и&nbsp;бухгалтерской рутины
         li.whom__item
           figure.whom__img-wrap.whom__img-wrap--lamp
-          p.whom__box
+          .whom__box
             h3.whom__sub-title Разработчики
             p.whom__text Быстрое внедрение своих приложений для малого бизнеса и&nbsp;стартапов
 
@@ -165,7 +165,7 @@ block content
         h2.trifs__title.title.tablet-hidden Тарифы
         p.trifs__text Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса.
         p.trifs__text Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
-        form.trifs__form.form-simple.valid#trifs-form.tablet-hidden(action="#" method="post" name="trifs"  automatecomplete="off")
+        form.trifs__form.form-simple.valid#trifs-form.tablet-hidden(action="#" method="post" name="trifs" )
           p.form-simple__banner Проверьте e-mail!
           fieldset.form-simple__field
             .form-simple__box
@@ -177,14 +177,14 @@ block content
         figure.trifs__img-wrap
           +img-retina(`trifs`, `jpg`, `Тарифы`, `trifs__img`, `461`, `473`)
 
-      form.trifs__form-tablet.form-simple.valid#trifs-form-tablet(action="#" method="post" name="trifs-tablet"  automatecomplete="off")
-          p.form-simple__banner Проверьте e-mail!
-          fieldset.form-simple__field
-            .form-simple__box
-              label.form-simple__label(for="trifs-tablet") Введите email
-              input.form-simple__input.val-elem.val-elem--email#trifs-tablet(type="text" placeholder="Введите email" name="email" )
+      form.trifs__form-tablet.form-simple.valid#trifs-form-tablet(action="#" method="post" name="trifs-tablet" )
+        p.form-simple__banner Проверьте e-mail!
+        fieldset.form-simple__field
+          .form-simple__box
+            label.form-simple__label(for="trifs-tablet") Введите email
+            input.form-simple__input.val-elem.val-elem--email#trifs-tablet(type="text" placeholder="Введите email" name="email" )
 
-          button.form-simple__btn.btn.btn--blue(type="submit") Узнать
+        button.form-simple__btn.btn.btn--blue(type="submit") Узнать
 
   section.soon
     .soon__inner.container
@@ -214,3 +214,36 @@ block content
             p.soon-item__text Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы
 
       button.soon__btn.hover-opacity(type="button") И еще 17 нововведений
+
+  section.safety
+    .safety__inner.container
+      .safety__col-left
+        figure.safety__img-wrap
+          +img-retina(`safety`, `jpg`, `Безопасность`, `safety__img`, `422`, `360`)
+
+      .safety__col-right
+        h2.safety__title.title Безопасность
+        p.safety__text Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только для получения выписок», а хранение информации в системе защищено и&nbsp;деперсонализировано.
+
+  section.connect
+    .connect__inner.container
+      h2.connect__title.title Подключиться
+      .connect__col-left
+        p.connect__text Хотите начать пользоваться системой? Напишите нам.
+        a.connect__link.hover-opacity(href="mailto:hello@everypay.io") email
+        p.connect__text hello@everypay.io
+
+      .connect__col-right
+        form.connect__form.form-big.valid#connect-form(action="#" method="post" name="connect" )
+          fieldset.form-big__field
+            .form-big__box
+              label.form-big__label(for="connect-name") Ваше имя
+              input.form-big__input.val-elem.val-elem--email#connect-name(type="text" placeholder="Ваше имя*" name="name" )
+            .form-big__box
+              label.form-big__label(for="connect-email") Введите email
+              input.form-big__input.val-elem.val-elem--email#connect-email(type="text" placeholder="Email*" name="email" )
+            .form-big__box
+              label.form-big__label(for="connect-text") Расскажите о своей компании*
+              textarea.form-big__textarea#connect-text(name="connect-text", cols="", rows="1" placeholder="Расскажите о своей компании*")
+
+          button.form-big__btn.btn.btn--blue(type="submit") Подключиться
