@@ -1,0 +1,119 @@
+.whom
+  margin-bottom: 190px
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    width: 679px
+    height: 557px
+    right: 0
+    top: 95%
+    transform: translateY(-50%)
+    background-image: url(/img/svg/whom-bg.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 100% 50%
+    z-index: -1
+
+  +mw($tb)
+    margin-bottom: 110px
+
+    &::after
+      width: 280px
+      top: 73%
+
+  +mw($ph)
+    margin-bottom: 135px
+
+    &::after
+      width: 310px
+      top: 50%
+
+  &__title
+    margin-bottom: 90px
+
+    +mw($tb)
+      margin-bottom: 70px
+
+    +mw($ph)
+      margin-bottom: 44px
+
+  &__list
+    display: flex
+    justify-content: space-around
+
+    +mw($tb)
+      justify-content: space-between
+
+    +mw($ph)
+      flex-direction: column
+      align-items: center
+
+  &__item
+    max-width: 240px
+    width: calc((100% / 3) - (40px / 3))
+    display: flex
+    flex-direction: column
+
+    +mw($ph)
+      width: 100%
+      max-width: none
+
+      & + li
+        margin-top: 30px
+
+  &__img-wrap
+    margin-bottom: 37px
+    margin-left: auto
+    margin-right: auto
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: 0 100%
+
+    +mw($tb)
+      margin-bottom: 30px
+
+  &__img-wrap--pot
+    width: 100px
+    height: 161px
+    background-image: url(/img/pot.png)
+
+    +mw($tb)
+      width: 78px
+      height: 135px
+
+  &__sub-title
+    font-size: 22px
+    font-weight: 600
+    margin-bottom: 12px
+
+    +mw($ph)
+      text-align: center
+
+  &__text
+    font-size: 18px
+
+    +mw($tb)
+      font-size: 16px
+
+    +mw($ph)
+      text-align: center
+
+  &__img-wrap--horse
+    width: 140px
+    height: 159px
+    background-image: url(/img/horse.png)
+
+    +mw($tb)
+      width: 119px
+      height: 135px
+
+  &__img-wrap--lamp
+    width: 174px
+    height: 159px
+    background-image: url(/img/lamp.png)
+
+    +mw($tb)
+      width: 150px
+      height: 135px

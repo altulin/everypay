@@ -1,0 +1,135 @@
+.soon
+  margin-bottom: 160px
+
+  +mw($tb)
+    margin-bottom: 110px
+
+  +mw($ph)
+    margin-bottom: 127px
+
+  &__inner
+
+  &__title
+    margin-bottom: 90px
+
+    +mw($tb)
+      margin-bottom: 70px
+
+    +mw($ph)
+      margin-bottom: 40px
+
+  &__list
+    margin-bottom: 32px
+
+  &__item
+    display: flex
+    padding-top: 50px
+    padding-bottom: 50px
+    position: relative
+
+    +mw($tb)
+      padding-top: 32px
+      padding-bottom: 32px
+      flex-direction: column
+      align-items: center
+
+    &::after
+      position: absolute
+      content: ""
+      width: 100%
+      height: 1px
+      bottom: 0
+      left: 0
+      background-image: $Gradient_Dark
+      opacity: 0.2
+
+  &__btn
+    background-color: transparent
+    margin-left: auto
+    margin-right: auto
+    display: block
+    font-size: 22px
+    font-weight: 600
+    cursor: pointer
+
+    +mw($ph)
+      font-size: 18px
+
+.soon-item
+
+  &__col-left
+    max-width: 440px
+    flex-grow: 1
+    width: 100%
+
+    +mw($tb)
+      margin-bottom: 22px
+
+    +mw($ph)
+      max-width: none
+
+  &__title
+    font-size: 28px
+    font-weight: 500
+    letter-spacing: 0.44px
+
+    +mw($tb)
+      text-align: center
+
+    +mw($ph)
+      font-size: 18px
+      font-weight: 600
+      padding-left: 33px
+      text-align: left
+
+  &__col-right
+    flex-grow: 1
+    max-width: 440px
+    padding-left: 60px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+
+    +mw($ph)
+      padding-left: 33px
+      max-width: none
+      width: 100%
+
+    &::before
+      content: ""
+      position: absolute
+      width: 43px
+      height: 3px
+      left: 0
+      top: 9px
+      background-image: linear-gradient(180deg, $blue-six 0%, $blue-six 0.01%, $blue-seven 73.96%)
+
+      +mw($ph)
+        width: 21px
+
+  &__text
+    font-size: 18px
+    letter-spacing: 0.443077px
+
+    +mw($ph)
+      font-size: 16px
+
+  &__box
+    display: flex
+    align-items: center
+    margin-top: 20px
+
+.soon-item--bitrix
+  background-image: url(/img/bitrix.png)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 54px
+  height: 32px
+
+.soon-item--crm
+  background-image: url(/img/crm.png)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 111px
+  height: 23px
+  margin-left: 20px

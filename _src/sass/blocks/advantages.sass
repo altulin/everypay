@@ -1,0 +1,210 @@
+.advantages
+  padding-top: 100px
+  margin-bottom: 235px
+
+  +mw($tb)
+    margin-bottom: 100px
+
+  +mw($ph)
+    padding-top: 50px
+
+  &__title
+    +vh()
+
+  &__inner
+    overflow: inherit
+
+    +mw($tb)
+      overflow: hidden
+
+  &__list
+    flex-direction: column
+
+    +mw($tb)
+      flex-direction: row
+
+  &__item
+    display: flex
+    align-items: center
+
+    & + li
+      margin-top: 150px
+
+      +mw($tb)
+        margin-top: 0
+
+    +mw($tb)
+      flex-direction: column
+
+  &__box
+    max-width: 440px
+
+    +mw($tb)
+      margin-bottom: 100px
+      max-width: 420px
+
+    +mw($ph)
+      margin-bottom: 30px
+
+  &__form
+    margin-top: 48px
+
+  &__picture
+    flex-shrink: 0
+    margin-left: auto
+    margin-right: auto
+    flex-grow: 1
+
+    +mw($tb)
+      width: 100%
+
+    &--ruble
+      max-width: 354px
+
+    &--pig
+      max-width: 412px
+
+    &--scenario
+      max-width: 722px
+      transform: translateX(40px)
+      border-radius: 10px
+      overflow: hidden
+      box-shadow: 0px 10px 24px rgba($black, 0.06), 0px 0px 6px rgba($black, 0.04), 0px 0px 1px rgba($black, 0.04)
+
+      +mw($dt)
+        transform: none
+        margin-left: 20px
+
+      +mw($tb)
+        transform: none
+        margin-left: 0
+
+    &--hand
+      max-width: 395px
+
+  &__img-wrap
+    position: relative
+    width: 100%
+
+  &__img-wrap--ruble
+    padding-top: 100%
+
+  &__img
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+
+  &__img-wrap--pig
+    padding-top: 100%
+
+  &__img-wrap--scenario
+    padding-top: 55%
+
+  &__img-wrap--hand
+    padding-top: 150%
+
+  &__prev
+    display: none
+
+  &__next
+    display: none
+
+.title
+  font-size: 40px
+  font-weight: 700
+
+  +mw($tb)
+    font-size: 48px
+    text-align: center
+
+  +mw($ph)
+    font-size: 32px
+    text-align: center
+
+.advantages-slide
+
+  &__title
+    margin-bottom: 10px
+
+  &__text
+    letter-spacing: 0.443077px
+    font-size: 18px
+
+    +mw($tb)
+      text-align: center
+
+    +mw($ph)
+      font-size: 16px
+
+.form-simple
+  display: flex
+  justify-content: space-between
+  background-color: $blue-three
+  border-radius: 44px
+  position: relative
+
+  &__banner
+    position: absolute
+    width: calc(100% + 1px)
+    height: 100%
+    left: 0
+    top: 0
+    background-color: $blue-three
+    flex-direction: row-reverse
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    letter-spacing: 0.96px
+    border-radius: 44px
+    display: none
+
+    &.success
+      display: flex
+
+    &::after
+      content: ""
+      width: 16px
+      height: 16px
+      display: block
+      background-image: url(/img/svg/arr-green.svg)
+      margin-right: 16px
+
+  &--advantages
+
+    +mw($ph)
+      display: none
+
+  &__field
+    width: 100%
+
+  &__label
+    +vh()
+
+  &__input
+    width: 100%
+    padding: 0
+    border: none
+    color: rgba($blue-four, 0.6)
+    font-size: 16px
+    letter-spacing: 0.96px
+    padding: 15px 20px
+    border-radius: 44px 0 0 44px
+    background-color: transparent
+
+    &:focus
+      color: $text
+
+    &::placeholder
+      color: rgba($blue-four, 0.6)
+      font-size: 16px
+      letter-spacing: 0.96px
+
+  &__btn
+    padding-left: 53px
+    padding-right: 53px
+    cursor: pointer
+
+.not-valid
+  box-shadow: 0px 10px 24px rgba($red, 0.3), 0px 0px 6px rgba($red, 0.3), 0px 0px 1px rgba($red, 0.3)

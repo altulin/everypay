@@ -1,0 +1,168 @@
+.cases
+  margin-bottom: 160px
+
+  +mw($tb)
+    margin-bottom: 110px
+    padding-right: 0
+
+  +mw($ph)
+    margin-bottom: 100px
+
+  &__title
+    margin-bottom: 85px
+
+    +mw($tb)
+      margin-bottom: 70px
+
+    +mw($ph)
+      margin-bottom: 40px
+
+  &__inner
+
+    +mw($tb)
+      padding-bottom: 54px
+
+  &__list
+
+  &__item
+
+    +mw($tb)
+      max-width: 310px
+
+    +mw($ph)
+      max-width: 222px
+
+  &__pagination
+    display: none
+
+    +mw($tb)
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      bottom: 0
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 8px
+
+.swiper-pagination-bullet
+  background-color: transparent
+  width: 12px
+  height: 12px
+  border: 1px solid #B2EEFC
+  opacity: 1
+
+.swiper-pagination-bullet-active
+  background-image: $Gradient_Dark
+  width: 16px
+  height: 16px
+
+.container
+
+.title
+
+.swiper-container
+
+.swiper-wrapper
+
+.swiper-slide
+
+.case
+
+  &__link
+    display: block
+    padding-left: 24px
+    padding-right: 32px
+    padding-top: 33px
+    padding-bottom: 19px
+    border: 1px solid rgba($blue-border, 0.18)
+    min-height: 297px
+    display: flex
+    flex-direction: column
+    position: relative
+    transition: 0.2s
+
+    +mw($ph)
+      min-height: 213px
+
+    &::after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 3px
+      background-image: $Gradient_Dark
+      bottom: 0
+      left: 0
+      opacity: 0
+      transition: 0.2s
+
+    &:hover
+      background-color: $blue-three
+
+      &::after
+        opacity: 1
+
+  &__box
+    display: flex
+    align-items: center
+
+  &__img-wrap
+    background-repeat: no-repeat
+    background-size: contain
+
+    & + figure
+      margin-left: 12px
+
+  &__img-wrap--bitrix
+    width: 54px
+    height: 32px
+    background-image: url(/img/bitrix.png)
+
+  &__img-wrap--everypay
+    width: 47px
+    height: 32px
+    background-image: url(/img/everypay.png)
+
+  &__img-wrap--tg
+    width: 39px
+    height: 39px
+    background-image: url(/img/tg-l.png)
+
+  &__img-wrap--point
+    width: 72px
+    height: 20px
+    background-image: url(/img/point.png)
+
+  &__text
+    font-size: 22px
+    font-weight: 600
+    etter-spacing: 0.44px
+    margin-bottom: 19px
+    margin-top: auto
+    color: $text
+
+    +mw($ph)
+      font-size: 18px
+
+  &__pseudo-link
+    // background-image: $Gradient_Dark
+    // -webkit-background-clip: text
+    // -webkit-text-fill-color: transparent
+    font-size: 16px
+    font-weight: 600
+    position: relative
+    display: flex
+    align-items: center
+    color: $blue-six
+
+    &::after
+      content: ""
+      width: 10px
+      height: 13px
+      background-image: url(/img/svg/arr-blue.svg)
+      background-repeat: no-repeat
+      background-size: contain
+      display: block
+      margin-left: 5px
+
+.swiper-pagination

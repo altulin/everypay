@@ -1,0 +1,215 @@
+.banks
+  margin-bottom: 160px
+
+  +mw($tb)
+    margin-bottom: 110px
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    +mw($tb)
+      flex-direction: column
+      align-items: center
+
+  &__title
+    width: 100%
+    margin-bottom: 90px
+
+    +mw($tb)
+      margin-bottom: 70px
+
+    +mw($ph)
+      margin-bottom: 40px
+
+  &__col-left
+    border: 1px solid rgba($blue-border, 0.187528)
+    max-width: 534px
+    width: 47%
+    flex-grow: 1
+    padding-left: 40px
+    padding-right: 40px
+    padding-top: 20px
+
+    +mw($ph)
+      padding-left: 21px
+      padding-right: 21px
+
+    +mw($tb)
+      width: 100%
+      margin-bottom: 40px
+
+  &__col-right
+    border: 1px solid rgba($blue-border, 0.187528)
+    max-width: 534px
+    flex-grow: 1
+    padding-left: 40px
+    padding-right: 40px
+    padding-top: 20px
+    margin-left: 20px
+
+    +mw($tb)
+      width: 100%
+      margin-left: 0
+      padding-bottom: 21px
+
+    +mw($ph)
+      padding-left: 18px
+      padding-right: 0px
+
+.bank
+
+  &__title
+    color: rgba($blue-border, 0.5)
+    font-weight: 400
+    font-size: 18px
+    letter-spacing: 0.443077px
+    margin-bottom: 21px
+
+  &__list
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: flex-start
+
+  &__item
+
+    &:nth-child(even)
+      margin-left: 30px
+
+      +mw($ph)
+        margin-left: 0
+
+    +mw($ph)
+      width: 50%
+
+  &__img
+
+    +mw($ph)
+
+      &--point
+        width: 103px
+        height: 73px
+
+      &--tinkoff
+        width: 96px
+        height: 42px
+
+      &--modul
+        width: 142px
+        height: 80px
+
+.load
+  padding-top: 40px
+  padding-bottom: 44px
+  position: relative
+  display: flex
+  align-items: center
+  padding-left: 5px
+
+  +mw($ph)
+    padding-top: 21px
+    padding-bottom: 21px
+
+  &::after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 1px
+    top: 0
+    left: 0
+    background-image: $Gradient_Dark
+    opacity: 0.2
+
+  &::before
+    content: ""
+    width: 14px
+    height: 14px
+    background-image: url(/img/svg/plus.svg)
+    background-size: contain
+    margin-right: 20px
+
+  &__img-wrap
+    margin-right: 10px
+    width: 36px
+    height: 45px
+    background-image: url(/img/csv.png)
+    background-repeat: no-repeat
+    background-size: contain
+
+  &__text
+    font-size: 18px
+    color: $black
+    letter-spacing: 0.443077px
+
+.integration
+
+  &__title
+    color: rgba($blue-border, 0.5)
+    font-weight: 400
+    font-size: 18px
+    letter-spacing: 0.443077px
+    margin-bottom: 36px
+
+  &__list
+
+  &__item
+    display: flex
+    align-items: center
+
+    & + li
+      margin-top: 50px
+
+      +mw($tb)
+        margin-top: 45px
+
+      +mw($tb)
+        margin-top: 25px
+
+  &__img-wrap
+    background-repeat: no-repeat
+    background-size: contain
+
+  &__img-wrap--web
+    width: 53px
+    height: 58px
+    background-image: url(/img/svg/web.svg)
+    margin-left: 10px
+    margin-right: 31px
+
+    +mw($ph)
+      width: 32px
+      height: 35px
+      margin-left: 0
+      margin-right: 11px
+
+  &__text
+    letter-spacing: 0.443077px
+    font-size: 18px
+    color: $black
+
+  &__img-wrap--mail
+    width: 48px
+    height: 59px
+    background-image: url(/img/svg/mail.svg)
+    margin-left: 12px
+    margin-right: 33px
+
+    +mw($ph)
+      width: 29px
+      height: 35px
+      margin-left: 0
+      margin-right: 11px
+
+  &__img-wrap--tg
+    width: 72px
+    height: 72px
+    background-image: url(/img/tg.png)
+    margin-right: 21px
+
+    +mw($ph)
+      width: 35px
+      height: 35px
+      margin-left: 0
+      margin-right: 11px
