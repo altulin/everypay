@@ -4,7 +4,7 @@ const distFolder = `build`; //Папка продакшн
 const srcFolder = `_src`;  // Папка разработки
 
 // необходимые библиотеки
-module.exports.plugunsJsUsed = [`mmenu_js`, `swiper_js`, `myJsLibs`, `myJsFile`];
+module.exports.plugunsJsUsed = [`mmenu_js`, `swiper_js`, `micromodal_js`, `myJsLibs`, `myJsFile`];
 module.exports.plugunsCssUsed = [`normalize_css`, `mmenu_css`, `swiper_css`, `myCssLibs`, `myCssFile`];
 
 // module.exports.plugunsJsUsed = [`myJsLibs`, `myJsFile`];
@@ -21,7 +21,8 @@ module.exports.plugunsJs = new Map([
   [`responsive-tabs_js`, `node_modules/responsive-tabs/js/jquery.responsiveTabs.min.js`],
   [`myJsFile`, `${srcFolder}/js/main.js`], // мой файл js
   [`myJsLibs`, `${srcFolder}/js/libs/**/*.js`], // мои библиотеки js
-  [`swiper_js`, `node_modules/swiper/swiper-bundle.min.js`]
+  [`swiper_js`, `node_modules/swiper/swiper-bundle.min.js`],
+  [`micromodal_js`, `node_modules/micromodal/dist/micromodal.min.js`]
 ]);
 
 

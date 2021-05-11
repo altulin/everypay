@@ -1,4 +1,4 @@
-
+import { createListenerModal } from './modal.js';
 const validateEmail = (email) => {
   var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
   return re.test(String(email).toLowerCase());
@@ -27,7 +27,6 @@ const validate = (e) => {
           valid_flag = true
         }
       }
-
 
       if (valid_flag) {
         sendForm(form);
@@ -74,14 +73,14 @@ const validate = (e) => {
   }
 };
 
-
 const success = (form) => {
   try {
     form.querySelector(`.form-simple__banner`).classList.add(`success`)
   } catch { }
 
   if (form.matches(`.form-big`)) {
-    // modal.open();
+    createListenerModal()
+    MicroModal.show('modal-1');
 
   }
 };
