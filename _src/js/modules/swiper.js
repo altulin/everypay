@@ -20,7 +20,6 @@ export const createAdvantagesSlider = () => {
 
 export const createCasesSlider = () => {
   if (cases_inner) {
-    console.log(cases_inner)
     const cases_swiper = new Swiper('.cases__inner', {
       loop: true,
       pagination: {

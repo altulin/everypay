@@ -5,35 +5,85 @@ const validateEmail = (email) => {
 };
 const formList = Array.from(document.querySelectorAll(`.valid`));
 const elems = Array.from(document.querySelectorAll(`.val-elem`));
-
+const form_big_el = Array.from(document.querySelector(`.form-big`).querySelectorAll(`.val-elem`))
 
 
 const validate = (e) => {
   let valid_flag = false;
+
+  let email_flag = false;
+  let name_flag = false;
+  let text_flag = false;
   e.preventDefault();
   const form = e.target;
   const val_elems = Array.from(form.querySelectorAll(`.val-elem`))
 
-  val_elems.map((item) => {
-    if (item.matches(`.val-elem--email`)) {
-      const email = item.value
+  if (form.matches(`.form-simple`)) {
+    val_elems.map((item) => {
+      if (item.matches(`.val-elem--email`)) {
+        const email = item.value
 
-      if (validateEmail(email)) {
-        valid_flag = true
+        if (validateEmail(email)) {
+          valid_flag = true
+        }
       }
-    }
 
-    if (valid_flag) {
 
-      sendForm(form);
-    } else {
-      form.classList.add(`not-valid`)
-    }
-  });
+      if (valid_flag) {
+        sendForm(form);
+      } else {
+        form.classList.add(`not-valid`)
+      }
+    });
+  }
+
+
+  if (form.matches(`.form-big`)) {
+    val_elems.map((item) => {
+      if (item.matches(`.val-elem--email`)) {
+        if (validateEmail(item.value)) {
+          email_flag = true
+        } else {
+          item.classList.add(`not-val`)
+        }
+      }
+
+      if (item.matches(`.val-elem--name`)) {
+        // console.log(item.value.length)
+        if (item.value.length > 0) {
+          name_flag = true
+        } else {
+          item.classList.add(`not-val`)
+        }
+      }
+
+      if (item.matches(`.val-elem--textarea`)) {
+        if (item.value.length > 0) {
+          text_flag = true
+        } else {
+          item.classList.add(`not-val`)
+        }
+      }
+
+      if (email_flag && name_flag && text_flag) {
+        sendForm(form);
+      } else {
+        form.classList.add(`not-valid`)
+      }
+    })
+  }
 };
 
+
 const success = (form) => {
-  form.querySelector(`.form-simple__banner`).classList.add(`success`)
+  try {
+    form.querySelector(`.form-simple__banner`).classList.add(`success`)
+  } catch { }
+
+  if (form.matches(`.form-big`)) {
+    // modal.open();
+
+  }
 };
 
 const sendForm = (form) => {
@@ -53,6 +103,13 @@ export const resetErr = (formList) => {
   elems.map((item) => {
     item.addEventListener(`click`, () => {
       formList.map((elem) => elem.classList.remove(`not-valid`))
+    })
+  })
+
+  // const val_el = form_big.querySelector
+  form_big_el.map((el) => {
+    el.addEventListener(`click`, () => {
+      form_big_el.map((n) => n.classList.remove(`not-val`))
     })
   })
 };

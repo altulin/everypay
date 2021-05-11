@@ -69,6 +69,9 @@
 
 .form-big
 
+  &.not-valid
+    box-shadow: none
+
   &__field
 
   &__box
@@ -112,6 +115,9 @@
     border-radius: 20px
     min-height: 68px
 
+    &:focus
+      outline: none
+
     &::placeholder
       font-size: 18px
       line-height: 28px
@@ -133,3 +139,8 @@
 .btn
 
 .btn--blue
+
+.not-valid
+
+  & .not-val
+    border-color: $red

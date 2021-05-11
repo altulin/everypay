@@ -1313,7 +1313,8 @@ input,
 textarea,
 button,
 select,
-a {
+a,
+textarea {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 fieldset {
@@ -3041,6 +3042,10 @@ button {
     max-width: 440px;
     width: 100%; }
 
+.form-big.not-valid {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
 .form-big__box + div {
   margin-top: 20px; }
 
@@ -3105,6 +3110,8 @@ button {
   border: 1px solid rgba(56, 152, 254, 0.4);
   border-radius: 20px;
   min-height: 68px; }
+  .form-big__textarea:focus {
+    outline: none; }
   .form-big__textarea::-webkit-input-placeholder {
     font-size: 18px;
     line-height: 28px;
@@ -3136,6 +3143,9 @@ button {
   padding-left: 28px;
   padding-right: 28px;
   cursor: pointer; }
+
+.not-valid .not-val {
+  border-color: red; }
 
 .main-footer {
   padding-bottom: 114px;

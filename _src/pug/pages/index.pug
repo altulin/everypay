@@ -238,12 +238,16 @@ block content
           fieldset.form-big__field
             .form-big__box
               label.form-big__label(for="connect-name") Ваше имя
-              input.form-big__input.val-elem.val-elem--email#connect-name(type="text" placeholder="Ваше имя*" name="name" )
+              input.form-big__input.val-elem.val-elem--name#connect-name(type="text" placeholder="Ваше имя*" name="name" )
             .form-big__box
               label.form-big__label(for="connect-email") Введите email
               input.form-big__input.val-elem.val-elem--email#connect-email(type="text" placeholder="Email*" name="email" )
             .form-big__box
               label.form-big__label(for="connect-text") Расскажите о своей компании*
-              textarea.form-big__textarea#connect-text(name="connect-text", cols="", rows="1" placeholder="Расскажите о своей компании*")
+              textarea.form-big__textarea#connect-text.val-elem.val-elem--textarea(name="connect-text", cols="", rows="1" placeholder="Расскажите о своей компании*")
 
           button.form-big__btn.btn.btn--blue(type="submit") Подключиться
+
+  .section.tingle-modal.success.class-1.class-2
+    .success__inner 
+      h2.success Ура
