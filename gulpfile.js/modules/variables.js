@@ -7,9 +7,6 @@ const srcFolder = `_src`;  // Папка разработки
 module.exports.plugunsJsUsed = [`mmenu_js`, `swiper_js`, `micromodal_js`, `myJsLibs`, `myJsFile`];
 module.exports.plugunsCssUsed = [`normalize_css`, `mmenu_css`, `swiper_css`, `myCssLibs`, `myCssFile`];
 
-// module.exports.plugunsJsUsed = [`myJsLibs`, `myJsFile`];
-// module.exports.plugunsCssUsed = [`myCssLibs`, `myCssFile`];
-
 module.exports.plugunsJs = new Map([
   [`jquery_js`, `node_modules/jquery/dist/jquery.min.js`],
   [`jquery_modal_js`, `node_modules/jquery-modal/jquery.modal.min.js`],
@@ -99,5 +96,6 @@ module.exports.pathList = new Map([
   [`createWebp`, `images-webp`],
   [`transformPug`, `pug`],
   [`getWatchers`, `watch`],
-  [`groupMedia`, `media`]
+  [`groupMedia`, `media`],
+  [`webpack`, `webpack`]
 ]);

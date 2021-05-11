@@ -18,6 +18,7 @@ module.exports.plaginsObject = {
   prettify: require('gulp-html-prettify'),
   webp: require('gulp-webp'),
   gcmq: require(`gulp-group-css-media-queries`),
-  cleancss: require(`gulp-clean-css`)
+  cleancss: require(`gulp-clean-css`),
+  webpack: require(`webpack-stream`)
 
 }

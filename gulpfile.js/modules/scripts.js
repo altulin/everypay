@@ -14,6 +14,20 @@ const plugunsJsUsed = variablesPath.plugunsJsUsed;
 const path = variablesPath.path;
 
 
+// module.exports.getScriptFile = () => {
+//   const listFiles = util.getPlugunsList(plugunsJs, plugunsJsUsed)
+//   console.log(util.getPlugunsList(plugunsJs, plugunsJsUsed))
+//   // return src(util.getPlugunsList(plugunsJs, plugunsJsUsed))
+//   //   .pipe(sourcemaps.init())
+//   //   .pipe(concat(path.project.jsFile)) // Конкатенируем в один файл
+//   //   // .pipe(sourcemaps.write()) //добавляем карту
+//   //   .pipe(dest(path.made.jsFolder)) // Выгружаем готовый файл не мин в папку назначения
+//   //   .pipe(concat(path.project.jsMinFile))
+//   //   .pipe(uglify()) // Сжимаем JavaScript
+//   //   // .pipe(sourcemaps.write()) //добавляем карту
+//   //   .pipe(dest(path.made.jsFolder)) // Выгружаем готовый файл мин в папку назначения
+//   //   .pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
+// };
 module.exports.getScriptFile = () => {
   return src(util.getPlugunsList(plugunsJs, plugunsJsUsed))
     .pipe(sourcemaps.init())

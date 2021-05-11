@@ -38,7 +38,8 @@
     "micromodal": "^0.4.6",
     "mmenu-light": "^3.0.8",
     "node-normalize-scss": "^8.1.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "webpack-stream": "^6.1.2"
   },
   "dependencies": {
     "gulp-cli": "^2.3.0",
