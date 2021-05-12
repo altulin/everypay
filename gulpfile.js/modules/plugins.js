@@ -19,6 +19,6 @@ module.exports.plaginsObject = {
   webp: require('gulp-webp'),
   gcmq: require(`gulp-group-css-media-queries`),
   cleancss: require(`gulp-clean-css`),
-  webpack: require(`webpack-stream`)
+  webpackStream: require(`webpack-stream`)
 
 }

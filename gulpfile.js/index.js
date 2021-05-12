@@ -2,7 +2,7 @@ const plugins = require(`./modules/plugins.js`).plaginsObject;
 const util = require(`./modules/util.js`).util;
 const defaultArray = [`makeImagesSvg`, `makeImages`, `createSprite`, `getStyleFile`, `getScriptFile`, `createWebp`, `transformPug`, `getWatchers`, `browsersync`];
 // const testArray = [`browsersyncTest`]
-const testArray = [`getScriptFile`]
+const testArray = [`runWebpack`]
 const buildArray = [`clean`, `cleanImg`, `makeImagesSvg`, `makeImages`, `createSprite`, `getStyleFileDist`, `getScriptFile`, `createWebp`, `transformPug`, `getCopying`]
 
 const css = [`getStyleFile`]

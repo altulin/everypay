@@ -97,5 +97,5 @@ module.exports.pathList = new Map([
   [`transformPug`, `pug`],
   [`getWatchers`, `watch`],
   [`groupMedia`, `media`],
-  [`webpack`, `webpack`]
+  [`runWebpack`, `webpack`]
 ]);
