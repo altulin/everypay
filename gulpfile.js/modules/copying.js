@@ -10,7 +10,7 @@ module.exports.getCopying = () => {
     dist.cssFile,
     dist.cssMinFile, // стили мин если надо
     dist.fontsFiles,
-    dist.jsFile,
+    // dist.jsFile,
     dist.jsMinFile, // скрипты мин если надо
     dist.images,
     dist.htmlFiles,

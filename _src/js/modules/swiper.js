@@ -1,3 +1,5 @@
+
+import Swiper from 'swiper';
 const advantages_inner = document.querySelector(`.advantages__inner`);
 const cases_inner = document.querySelector(`.cases__inner`);
 

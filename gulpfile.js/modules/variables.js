@@ -4,7 +4,9 @@ const distFolder = `build`; //Папка продакшн
 const srcFolder = `_src`;  // Папка разработки
 
 // необходимые библиотеки
-module.exports.plugunsJsUsed = [`mmenu_js`, `swiper_js`, `micromodal_js`, `myJsLibs`, `myJsFile`];
+module.exports.plugunsJsUsed = [`myJsLibs`, `myJsFile`];
+// module.exports.plugunsCssUsed = [`normalize_css`, `myCssLibs`, `myCssFile`];
+// module.exports.plugunsJsUsed = [`mmenu_js`, `swiper_js`, `micromodal_js`, `myJsLibs`, `myJsFile`];
 module.exports.plugunsCssUsed = [`normalize_css`, `mmenu_css`, `swiper_css`, `myCssLibs`, `myCssFile`];
 
 module.exports.plugunsJs = new Map([
@@ -84,7 +86,7 @@ module.exports.path = {
 module.exports.pathList = new Map([
   [`browsersync`, `browsersync`],
   [`browsersyncTest`, `browsersync`],
-  [`getScriptFile`, `scripts`],
+  // [`getScriptFile`, `scripts`],
   [`getStyleFile`, `styles`],
   [`getStyleFileDist`, `styles`],
   [`makeImages`, `images`],
